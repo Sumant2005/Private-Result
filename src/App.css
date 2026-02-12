@@ -1,0 +1,175 @@
+/* Reset body margin so header sticks to top */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Red Header */
+.header {
+  background-color: red;
+  text-align: center;
+  padding: 8px 10px; /* reduced from 20px to 8px */
+}
+
+.header h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.header .badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #001f5b;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center; /* aligns text & icon vertically */
+  gap: 6px; /* space between icon and text */
+}
+
+.navbar a:hover {
+  background-color: #003080;
+}
+
+/* WhatsApp Link Styling */
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-logo {
+  height: 18px;  /* resized logo height */
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Layout Below Navbar */
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Section Titles */
+.section-title {
+  background-color: red;
+  color: white;
+  padding: 8px;
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Latest Updates */
+.latest-updates {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.latest-updates ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.latest-updates li {
+  margin-bottom: 8px;
+}
+
+.latest-updates a {
+  text-decoration: none;
+  color: #000;
+}
+
+.latest-updates a:hover {
+  color: red;
+}
+
+/* Job Table */
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.job-table th,
+.job-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.job-table th {
+  background: #000;
+  color: white;
+}
+
+.job-table a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.job-table a:hover {
+  text-decoration: underline;
+}
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-links a {
+  background: red;
+  color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.quick-links a:hover {
+  background: darkred;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}

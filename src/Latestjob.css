@@ -1,0 +1,109 @@
+/* General container */
+.latestjob-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background: #f9faff;
+}
+
+/* Main heading */
+.latestjob-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0a1f44;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Job card styling */
+.job-card {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card hover effect */
+.job-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated ribbon for job number */
+.job-card h2::before {
+  content: "🔥";
+  margin-right: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+/* Job title */
+.job-card h2 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* Job details */
+.job-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-card ul li {
+  padding: 6px 0;
+  line-height: 1.6;
+  color: #333333;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* Bullet icon for each li */
+.job-card ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+/* Links */
+.latestjob-container a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.latestjob-container a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Resource heading */
+.latestjob-container h2:last-of-type {
+  margin-top: 50px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #0a1f44;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .latestjob-container {
+    padding: 20px;
+  }
+
+  .job-card h2 {
+    font-size: 1.2rem;
+  }
+}
